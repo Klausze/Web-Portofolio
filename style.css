@@ -313,3 +313,76 @@ section {
 .btn-cert:hover {
     background-color: #5cb85c;
 }
+
+/* BREAKPOINT PENTING: Untuk Tablet & HP (Layar di bawah 850px) */
+@media screen and (max-width: 850px) {
+
+    /* --- 1. HEADER & NAVBAR (MENU) --- */
+    header {
+        position: relative; 
+        padding: 15px 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 15px; 
+    }
+
+    .navbar a {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    /* --- 2. BODY PADDING --- */
+    body {
+        padding-top: 0; 
+    }
+
+    /* --- 3. HERO SECTION (BAGIAN UTAMA) --- */
+    .hero-section {
+        min-height: auto; 
+        padding: 60px 5%; 
+    }
+
+    .hero-flex-container {
+        flex-direction: column; 
+        text-align: center; 
+        gap: 30px; 
+        align-items: center;
+    }
+
+    .hero-image {
+        width: 200px; 
+        height: 200px;
+        margin: 0; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+
+    /* --- 4. TYPOGRAPHY (TEKS HERO) --- */
+    .greeting {
+        font-size: 1.1rem; 
+        margin-bottom: 5px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.2rem, 8vw, 2.8rem); 
+        line-height: 1.2; 
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: clamp(0.9rem, 2.5vw, 1rem); 
+        line-height: 1.5; 
+        max-width: 90%; 
+        margin: 0 auto; 
+    }
+}
