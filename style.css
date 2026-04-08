@@ -386,15 +386,22 @@ section {
         margin: 0 auto; 
     }
 }
-
+#contact {
+    display: block !important; /* Memastikan section tidak tersembunyi */
+    padding: 80px 0;
+    background-color: #0b1a32; /* Warna dasar webmu */
+}
 .github-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 40px 20px;
-    background-color: #130f27; /* Warna senada header kamu */
-    border-radius: 12px;
-    margin: 40px auto;
-    max-width: 800px;
-    border: 1px solid #45408c; /* Border tipis biar elegan */
+    padding: 40px;
+    background-color: #130f27; /* Warna agak terang biar beda sama background */
+    border: 2px solid #4CAF50; /* Kasih border hijau sementara buat nandain posisi */
+    margin-bottom: 40px;
+    border-radius: 15px;
 }
 
 .github-cta p {
@@ -404,17 +411,14 @@ section {
 }
 
 .btn-github {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #4CAF50; /* Warna hijau biar kontras dan 'mengajak' klik */
+    background-color: #4CAF50;
     color: white;
-    padding: 12px 25px;
-    border-radius: 30px; /* Bikin rounded biar modern */
+    padding: 12px 24px;
     text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    margin-top: 15px;
+    display: inline-block;
 }
 
 .btn-github:hover {
