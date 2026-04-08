@@ -386,3 +386,50 @@ section {
         margin: 0 auto; 
     }
 }
+
+.github-cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #130f27; /* Warna senada header kamu */
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 800px;
+    border: 1px solid #45408c; /* Border tipis biar elegan */
+}
+
+.github-cta p {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+    margin-bottom: 20px;
+}
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #4CAF50; /* Warna hijau biar kontras dan 'mengajak' klik */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px; /* Bikin rounded biar modern */
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.btn-github:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+/* Biar tetap cakep di HP */
+@media (max-width: 600px) {
+    .github-cta {
+        margin: 20px 15px;
+        padding: 30px 15px;
+    }
+    .github-cta p {
+        font-size: 1rem;
+    }
+}
